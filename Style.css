@@ -1,0 +1,168 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1120;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #111c33;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.tagline {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.description {
+    color: #cbd5e1;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #38bdf8;
+    color: #0b1120;
+    padding: 13px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0ea5e9;
+}
+
+/* About Section */
+.about {
+    background-color: #111c33;
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #cbd5e1;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    padding: 25px 8%;
+    text-align: center;
+    color: #94a3b8;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #38bdf8;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .hero {
+        min-height: 65vh;
+        padding: 50px 6%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .about {
+        padding: 50px 6%;
+    }
+}
